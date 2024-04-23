@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="card-order.css">
+  <link rel="stylesheet" href="card-order.js">
+
+
+</head>
+
+<body>
+  <header>
+    <!-- Circular container for the logo -->
+    <div class="logo-container">
+      <img src="images/mainlogo.webp" alt="Company Logo  ">
+    </div>
+    <h1>Welcome to PMPML Bus Service</h1>
+    <nav>
+      <ul>
+        <li><a href="card.html">Order Bus Cards</a></li>
+        <li><a href="bus-stops.html">View Nearby Bus Stops</a></li>
+        <li><a href="#card-services">Card Services</a>
+          <ul>
+            <li><a href="#check-balance">Check Balance</a></li>
+            <li><a href="#update-balance">Update Balance</a></li>
+            <li><a href="#transaction-history">View Transaction History</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!--<div class="forth">
+        <div class="dis1">
+            30% discount on Weekends(Saturday and Sunday),10% <br>
+            discount on Weekends (monday to Friday) on every pmlp ride
+        </div>
+    </div>-->
+
+  <!--copie from the google-->
+  <div class="form-box">
+    <div class="container">
+      <div class="left-section">
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group">
+          <label for="middle-name">Middle Name</label>
+          <input type="text" id="middle-name" name="middle-name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name">
+        </div>
+        <div class="form-group">
+          <label for="mobile-number">Mobile Number</label>
+          <input type="text" id="mobile-number" name="mobile-number">
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD">
+        </div>
+        
+        <div class="form-group">
+          <label for="Aadhar">Aadhar NO</label>
+          <input type="text" id="Aadhar" name="Aadhar">
+        </div>
+      </div>
+      <div class="right-section">
+        <div class="form-group">
+          <label for="address-line1">Address Line 1</label>
+          <input type="text" id="address-line1" name="address-line1">
+        </div>
+        <div class="form-group">
+          <label for="address-line2">Address Line 2</label>
+          <input type="text" id="address-line2" name="address-line2">
+        </div>
+        
+        <div class="form-group">
+          <label for="state">State</label>
+          <select id="state" name="state">
+            <option value="MAHARASHTRA">Maharashtra</option>
+            <!-- Add more options here -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="city-town">City/Town</label>
+          <input type="text" id="city-town" name="city-town">
+        </div>
+        <div class="form-group">
+          <label for="email">Email Id</label>
+          <input type="text" id="email" name="email">
+        </div>
+        <!-- <div class="form-group">
+           <label for="politically-exposed">Politically exposed Person</label>
+           <input type="radio" id="yes" name="politically-exposed" value="Yes">
+           <label for="yes">Yes</label>
+           <input type="radio" id="no" name="politically-exposed" value="No">
+           <label for="no">No</label>
+         </div> -->
+        <div class="form-group">
+          <label for="assisted-by-bank">Assisted by Bank Staff</label>
+          <select id="assisted-by-bank" name="assisted-by-bank">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="submit-button"><a href="card.html">submit</a></button>
+    <!-- copied -->
+    <div class="footer-block"></div>
+
+  </div>
+  <footer>
+    <p>&copy; 2024 PMPML Bus Service. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

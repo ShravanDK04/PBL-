@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home.js">
+
+    
+   
+
+
+    <style>
+
+
+        
+
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative; /* Added position relative */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            z-index: 1000; /* Adjust as needed */
+          }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Style for circular container */
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 9999; /* Ensure the logo is on top */
+          }
+
+        /* Style for the logo inside the circular container */
+        .logo-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+
+
+    <header>
+        <!-- Circular container for the logo -->
+        <div class="logo-container">
+            <img src="images/mainlogo.webp" alt="Company Logo  ">
+        </div>
+        <h1>Welcome to PMPML Bus Service</h1>
+        <nav>
+            <ul>
+                <li><a href="card.html">Order Bus Cards</a></li>
+                <li><a href="bus-stops.html">View Nearby Bus Stops</a></li>
+                <li><a href="#card-services">Card Services</a>
+                    <ul>
+                        <li><a href="#check-balance">Check Balance</a></li>
+                        <li><a href="#update-balance">Update Balance</a></li>
+                        <li><a href="#transaction-history">View Transaction History</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="slider">
+  <img class="slide" src="images/bus1.jpg" alt="Image 1">
+  <img class="slide" src="images/bus2.jpg" alt="Image 2">
+  <img class="slide" src="images/bus3.jpg" alt="Image 3">
+  <img class="slide" src="images/bus4.jpg" alt="Image 4">
+  <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+  <button class="next" onclick="changeSlide(1)">&#10095;</button>
+</div>
+<!-- for the image slider  -->
+<script>
+  let slideIndex = 0;
+  showSlide(slideIndex);
+
+  function changeSlide(n) {
+    showSlide(slideIndex += n);
+  }
+
+  function showSlide(n) {
+    let slides = document.getElementsByClassName("slide");
+    if (n >= slides.length) {
+      slideIndex = 0;
+    }
+    if (n < 0) {
+      slideIndex = slides.length - 1;
+    }
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+  }
+</script>
+
+
+
+
+
+<!-- image slider over here -->
+
+<footer>
+    <p>&copy; 2024 PMPML Bus Service. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
